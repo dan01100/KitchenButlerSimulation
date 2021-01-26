@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.6931032800836722 0.6931032800836722 0.1980295085953349 0.75
-  position 1.2 1.6 2.3
+  orientation -0.19642362669174968 -0.8467493399566076 -0.49440197629086163 2.504852221319871
+  position -0.6622644213284161 2.2730658193036692 -0.7862595127457052
 }
 TexturedBackground {
 }
@@ -17,7 +17,22 @@ Worktop {
   size 0.6 0.06 2
 }
 TurtleBot3Burger {
+  hidden rotation_12 -0.9999981003326703 0.0018043448478347668 0.0007373403018160808 0.7758782935264732
   translation 0 0.735 0
+  extensionSlot [
+    DistanceSensor {
+      translation -0.07 0 0.07
+      rotation 1 0 0 1.6
+      name "rightDist"
+    }
+    DistanceSensor {
+      translation 0.07 0 0.07
+      rotation 1 0 0 1.6
+      name "leftDist"
+    }
+    RobotisLds01 {
+    }
+  ]
 }
 WoodenBox {
   size 0.5 0.7 1.9
